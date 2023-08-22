@@ -8,6 +8,6 @@ module.exports = (err,res,req,next)=>{
 
     res.status(err.statusCode).json({
         success:false,
-        error:err,
+        message:err.message,
     })
 }
